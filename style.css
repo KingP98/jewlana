@@ -1,1 +1,40 @@
+/* Solana color fade background animation */
+@keyframes solanaBg {
+  0% { background: #9945FF; }      /* purple */
+  25% { background: #14F195; }     /* green */
+  50% { background: #00BBFF; }     /* blue */
+  75% { background: #FAD761; }     /* yellow */
+  100% { background: #9945FF; }    /* back to purple */
+}
 
+/* Vibrating animation for image */
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, -1px); }
+  100% { transform: translate(1px, 1px); }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  animation: solanaBg 6s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.center {
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+
+.vibe-img {
+  width: 200px;
+  animation: vibrate 0.3s infinite;
+}
