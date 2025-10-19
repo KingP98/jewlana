@@ -1,5 +1,5 @@
 /* Flashing red, blue, and white background animation */
-@keyframes flashingBg {
+@keyframes solanaBg {
   0% { background: red; }
   25% { background: white; }
   50% { background: blue; }
