@@ -1,10 +1,10 @@
-/* Solana color fade background animation */
-@keyframes solanaBg {
-  0% { background: #9945FF; }      /* purple */
-  25% { background: #14F195; }     /* green */
-  50% { background: #00BBFF; }     /* blue */
-  75% { background: #FAD761; }     /* yellow */
-  100% { background: #9945FF; }    /* back to purple */
+/* Flashing red, blue, and white background animation */
+@keyframes flashingBg {
+  0% { background: red; }
+  25% { background: white; }
+  50% { background: blue; }
+  75% { background: white; }
+  100% { background: red; }
 }
 
 /* Vibrating animation for image */
